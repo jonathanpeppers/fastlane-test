@@ -14,3 +14,4 @@ let Gem name =
 let Fastlane p12 profile =
     Gem "cert"
     Gem "sigh"
+    Exec "cert" "--help"
