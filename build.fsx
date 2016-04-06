@@ -5,7 +5,7 @@ open System
 open BuildHelpers
 
 Target "fastlane" (fun() ->
-    Fastlane "path/to/p12" "path/to/profile"
+    Exec "sigh" "-a com.hitcents.drawastickmanepic2"
 )
 
 RunTarget()
