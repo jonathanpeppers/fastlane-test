@@ -2,9 +2,10 @@
 #load "build-helpers.fsx"
 open Fake
 open System
+open BuildHelpers
 
 Target "fastlane" (fun() ->
-    Console.WriteLine("I'm in the fastlane baby!");
+    Fastlane "path/to/p12" "path/to/profile"
 )
 
 RunTarget()
